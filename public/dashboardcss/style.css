@@ -1,0 +1,494 @@
+*{margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contener{
+    width: 100%;
+    float: left;
+}
+.navbar {
+    width: 20%;
+    float: left;
+    background-color: #002139;
+    color: #fff;
+    padding-bottom: 20px;
+    position: fixed !important;
+    height: 100vh;
+    overflow: auto;
+}
+/* body{
+    background-color: #e7d4d4 !important;
+} */
+nav {
+    width: 80%;
+    margin: auto;
+}
+
+nav h2 {
+    color: #ee7857;
+    padding: 25px 0;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 0px;
+    display: block;
+    padding-left: 10px;
+}
+nav h3 {
+    color: #2265a7;
+    padding: 10px 0px;
+}
+
+
+.topheader{
+    width: 80%;
+    float: left; 
+    margin-left: 20%;
+    position: absolute;
+    z-index: 9;
+    color: #fff;
+}
+.topheader a{
+    color: #fff;
+}
+.topheader a:hover{
+    color: #fff;
+}
+input[type="submit"]:hover{
+   cursor: pointer;
+    
+}
+.error{
+    color: red;
+}
+.searchbutton input{
+    padding: 5px;
+}
+header {
+    width: 100%;
+    float: left;
+    display: flex !important;
+    justify-content: space-between;
+    background-color: #065877;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 15px;
+    padding-top: 15px;
+    display: block;
+}
+header h2{
+    font-size: 27px;
+}
+header i.fa-regular.fa-bell{
+    font-size: 25px;
+}
+
+nav ul li a ion-icon.md.hydrated{
+    
+        margin-right: 10px;
+}
+
+nav hr{
+    margin: 10px 0;
+}
+
+header ul li a ion-icon.md.hydrated {
+    padding-left: 10px;
+}
+
+header ul li{
+    position: relative;
+}
+
+.dropdown{
+    position: absolute;
+    display: none;
+}
+.dropdown li{
+    display: block;
+}
+
+
+.dropdown li {
+    display: block;
+    background: #b2dced;
+    width: 150px;
+    text-align: center;
+}
+.dropdown li a{
+   padding: 10px 0;
+}
+
+.dropdown li a:hover{
+    background-color: #316679;
+    color: #fff;
+    transition: 1s;
+    
+}
+
+header ul li:hover .dropdown{
+    display: block !important;
+   
+}
+.banner{
+    width: 80%;
+    float: left;
+    margin-left: 20%;
+    position: absolute;
+}
+.banner section{
+    width: 100%;
+    float: left;
+    
+}   
+.banner section .banner2{
+    width: 100%;
+    float: left;
+    padding: 0 50px;
+}
+
+nav ul li a:hover {
+    background-color: #5fa4cf;
+    transition: 1s;
+    border-radius: 10px;
+}
+
+#first a{
+    background-color: #5fa4cf;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#first a:hover{
+    opacity: 0.60;
+    
+}
+.colgrup{
+    width: 90%;
+    margin: auto;
+
+}
+.fcontener{
+    width: 70%;
+    margin: auto;
+}
+.fcontener form{
+    width: 100%;
+    float: left;
+    background-color: #7cbce0;
+    padding: 35px;
+    margin-top: 100px;
+}
+.fcontener form input{
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px 0;
+}
+
+.mobilemenu span{
+    width: 20px;
+    height: 4px;
+    margin: 4px;
+    display:block;
+    background-color: #000;
+    display: none;
+}
+.figure{
+    overflow: auto;
+    height: 500px;
+}
+.mobilemenu{display: none;}
+
+.banner section{
+    background-image: url("rd1.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+
+/* media */
+
+@media(max-width:800px){
+    body{
+        font-size: 13px;
+      
+    }
+    header {
+        padding: 0 20px;
+    }
+    .mobilemenu{display: block;}
+    header ul li a{
+        padding: 0 5px;
+    }
+   
+    nav{
+        width: 90%;
+    }
+    nav ul li a {
+        padding: 5px 0px 5px 5px;
+    }
+    .topheader{
+        width: 100%;
+        margin-left: 0;
+    }
+    .navbar{
+        position: absolute;
+        width: 40%;
+        margin-left: -1000px;
+        transition: .3s linear;
+    }
+    .navbar.active{
+        margin-left: 0;
+        
+    }
+    .banner{
+        width: 100%;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+    .banner section .banner2{
+        width: 100%;
+        float: left;
+    }
+    header h2 {
+        font-size: 23px;
+        margin-left: 10px;
+    }
+    header{
+        position: relative;
+    }
+    .mobilemenu span{
+        width: 20px;
+        height: 4px;
+        margin: 4px;
+        display:block;
+        background-color: #000;
+    }
+    header i.fa-regular.fa-bell {
+        font-size: 15px;
+    }
+    
+}
+
+
+/* login css */
+body {
+    font-family: sans-serif;
+    background: -webkit-linear-gradient(to right, #155799, #159957);
+    background: linear-gradient(to right, #155799, #151616);
+    color: whitesmoke;
+}
+.formcountrner{
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+form{
+    width:100%;
+    margin: auto;
+    color:whitesmoke;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(11, 15, 13, 0.582);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px 25px;
+}
+
+input{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+  }
+
+button {
+    background-color: #030804;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+  }
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.headingsContainer{
+    text-align: center;
+}
+
+.headingsContainer p{
+    color: gray;
+}
+.mainContainer{
+    padding: 16px;
+}
+
+
+.subcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subcontainer a{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+span.forgotpsd a {
+    float: right;
+    color: whitesmoke;
+    padding-top: 16px;
+  }
+
+.forgotpsd a{
+    color: rgb(74, 146, 235);
+  }
+  
+.forgotpsd a:link{
+    text-decoration: none;
+  }
+
+  .register{
+    color: white;
+    text-align: center;
+  }
+  
+  .register a{
+    color: rgb(74, 146, 235);
+  }
+  
+  .register a:link{
+    text-decoration: none;
+  }
+
+  /* Media queries for the responsiveness of the page */
+  @media screen and (max-width: 600px) {
+    form{
+      width: 25rem;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    form{
+      width: 20rem;
+    }
+  }
+
+  /* registration */
+
+  .formstart{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  #submit{
+    background-color: #030804;
+    color: white;
+  }
+  .main{
+    width: auto !important;
+    padding: 10px;
+    border-radius: 0;
+  }
+  #edit{
+    background-color: green;
+    border: none;
+  }
+  #edit a{
+    color: #fff;
+    text-decoration: none;
+  }
+  #delete{
+    background-color: red;
+    color: #fff;
+    border: none;
+  }
+  #table{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+  #buttons{
+    width: auto;
+    color: #fff;
+  }
+  #buttons a{
+    color: #fff;
+    text-decoration: none;
+  }
+  #select{
+    width: 100%;
+    padding: 10px 0;
+  }
+  .select1{
+    width: 100%;
+    padding: 10px 0;
+  }
+  #table,tr,td,th{
+    border: 1px solid #000;
+    border-collapse: collapse;
+  }
+  #Remove{
+    background-color: red;
+    border: none;
+  }
+  .form{
+    width: 50%;
+    margin: auto;
+  }
+  svg.w-5.h-5{
+    width: 20px;
+  }tr.even td:last-child {
+    display: flex;
+    grid-gap: 10px;
+}
+tr.odd td:last-child {
+    display: flex;
+    grid-gap: 10px;
+}
+
+.overfolow{
+    width: 100%;
+    float: left;
+    overflow: auto;
+    font-size: 15px;
+}
+.profile_image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
